@@ -1,0 +1,331 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.3cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Jainam Anand Choudhari} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Program
+\newcommand{\roll}{20031031} % Your Roll No.
+\newcommand{\phone}{9518934114} % Your Phone Number
+\newcommand{\emaila}{jainam160102@gmail.com} %Email 1
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+% \parbox{2.35cm}{%
+% \includegraphics[width=2.35cm,clip]{wit.png}
+% }
+% \parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone}\\
+  {Roll No.: \roll} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {Course: B.Tech CSE} &  \href{https://github.com/JainamChoudhari16}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+  {Walchand Institute of Technology, Solapur} & \href{https://www.linkedin.com/in/jainam-choudhari/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Walchand Institute of Technology, Solapur}{CGPA: 9.02}
+      {Bachelor of Technology in Computer Science and Engineering}{June 2020-Present}
+    \resumeSubheading
+      {SES Jr. College of Arts and Science, Solapur}{76.6\%}
+      {Senior Secondary - Maharashtra State Board}{June 2019-March 2020}
+    \resumeSubheading
+      {S.R.Chandak English High School, Solapur}{91.4\%}
+      {Secondary - Maharashtra State Board}{May 2018}      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+% \section{\textbf{Experience}}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Martian Internship Program}{Remote}
+%       {Persistent Systems}{June 2023 - Aug 2023}
+%       \vspace{-2.0mm}
+%       \resumeItemListStart
+%     \item {Completed online training program covering concepts of Python, Data Structures, Algorithms, Linux Operating System \& Relational Database Management System }
+%     \item {Achieved top scores in training assignments, demonstrating exceptional knowledge retention and actively applying learned concepts to real-world scenarios, resulting in increased team efficiency by 20% }
+%     \item {Successfully completed intensive training sessions, surpassing performance targets by 15%, and mastering a wide range of subjects within a rigorous 3-month timeframe}
+%     \resumeItemListEnd
+
+%     \vspace{-3.0mm}
+
+%-----------EXPERIENCE----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Martian Internship Program}{Remote}
+{Persistent Systems}{June 2023 - Aug 2023}
+
+\resumeItemListStart
+\item Completed a series of 4 training modules on Python, Data Structures \& Algorithms, Linux Operating Systems, and Database Management Systems, designed and delivered by experienced professionals. Received a satisfaction rating of 90\% from participants.
+\item Achieved 85\% in training assignments and will be actively applying these learned concepts to real-world scenarios.
+\item Completed intensive training sessions, surpassing performance targets by 15\%, and mastering a wide range of subjects within a rigorous 3-month timeframe.
+\resumeItemListEnd
+
+% \resumeSubheading
+% {TCS - Sirius Program}{Remote}
+% {Future Ready Talent}{May - Aug 2023}
+
+% \resumeItemListStart
+% \item Completed online training program and certification covering Microsoft Azure Fundamentals and Microsoft Power Platform Fundamentals.
+% \item Submitted a project (Finkids) - Static website with implementing services like Azure Static Web Service and BOT Service.
+% \resumeItemListEnd
+
+% % \resumeSubHeadingListEnd
+
+%   \resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------Achievements----------------
+% \section{\textbf{Coding Profiles}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{\href{https://leetcode.com/yashgosavi_02/}{LeetCode }} % Award
+%     {: Solved 260+ Problems | Top 25\% (Rating - 1604) | Attended 20+ Contests | 100+ days streak }
+    
+%     {Ranked 1680 of 24523 participants in Weekly contest 350.}
+    
+%     {Ranked 2126 of 23173 participants in biweekly contest 106.}     
+% \resumePOR{\href{https://codeforces.com/profile/yashgosavi_02}{CodeForces}} % Award
+%      {: NewBie (Rating: 885) | Attended 3 Contests} 
+
+%      {Ranked 7036 of 46455 participants in Codeforces Round 891 (Div 3)}
+
+% \resumePOR{\href{https://auth.geeksforgeeks.org/user/yashgosavi02/practice}{GeeksForGeeks}} % Award
+%      {: Solved 200+ Problems | Institute Rank 8 of 1200+ geeks} 
+
+% \resumePOR{\href{https://www.hackerrank.com/yashgosavi_02}{HackerRank}} % Award
+%      {: 5* Java, Python and SQL} 
+     
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject{\href{https://github.com/JainamChoudhari16/Major_project}{Aastha Insurance \& Investments Website}}%Project Name
+      {Invest and Insure on just one click : User Interface for an Insurance agent.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+      \item { Designing the high-traffic Aastha Insurance \& Investments website will increase user engagement by 40\% and conversion by 25\%, improving customer experience and bottom line.}
+      \item {Features: Quote Generation, Policy Management, Customer Friendly and Supportive, Educational Resources }
+    \resumeItemListEnd
+\vspace{1.5mm}
+
+\resumeProject{\href{https://github.com/JainamChoudhari16/Mini_Project-ChatNet}{Command Line TCP Chat Room }}%Project Name
+      {Command Line Interface-based real-time chatting application with file sharing.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+      \item { Designed for streamlined communication, enhancing command-line skills, and secure data \& file transfer, this tool facilitates efficient interaction among users while primarily catering to developers well-versed in the command-line interface.
+ }
+        % \item {Features: Real-time text chat, File sharing, Group chats, Admin privileges, User authentication }
+        \item {Technology Used: CLI, Socket Programming, Python with different Libraries}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, SQL } \\
+      \textbf{Libraries }{: Numpy, Pandas}\\ 
+     \textbf{Web Development \& Framework }{: HTML5, CSS3, Git, GitHub, Bootstrap, Django } \\ 
+     % \textbf{Database/ Cloud}{:MYSQL, AWS } \\ 
+     \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Object Oriented Programming, Database Management System, Computer Networking, Operating Systems } \\ 
+     \textbf{Areas of Interest}{: Data Science, AI/ML, Cloud Computing} \\
+    %  \textbf{Soft Skills}{: Problem-Solving, Self-learning, Presentation, Adaptability, Communication, Team Work} \\
+    % }}
+ \end{itemize}
+ \vspace{-16pt}
+%-----------Certification-----------------
+\section{\textbf{Certifications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\ListBegin
+\itemsep0em 
+\item {\href{https://drive.google.com/file/d/1Mou9llUbtecjKI_jlzQfW7ypbM3NqaQg/view}{Infosys Springboard - Python Foundation Certification }}
+
+\item {\href{https://courses.cognitiveclass.ai/certificates/40a60a1bfd1344fc8bec8310f48ba1ea}{Cognitive Class - Python 101 for Data Science}}
+
+\item {\href{https://courses.cognitiveclass.ai/certificates/a9b6fcff8c564698a1673617f2626293}{Cognitive Class - Data Analysis with Python}}
+
+\item {\href{https://olympus1.mygreatlearning.com/course_certificate/CHTTAWXI}{Great Learning Academy - Data Visualization with Power BI }}
+
+% \item {\href{https://www.coursera.org/account/accomplishments/certificate/2D32MCZH9BX5}{Coursera - Introduction to Computer \& Operating 
+% System \& Security }}
+
+% \item {\href{https://www.coursera.org/account/accomplishments/certificate/98K9ETVKNY7K}{Coursera - Introduction to Networking and Cloud Computing}}
+
+% \item {\href{https://www.credly.com/badges/b868577a-2960-4518-8e92-339cc6317b4e/linked_in_profile}{AWS Academy Graduate - AWS Academy Cloud Foundations}}
+% \item {LinkedIn Learning - SQL Essential training}
+
+\ListEnd
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+
+%-----------Additional Information-----------------
+\section{\textbf{Position of Responsiblities}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+% \resumePOR{\href{https://www.hackerrank.com/jainamchoudhari1} HackerRank } % Position
+%     {5 Star Python, SQL, Java} %Club,Event
+
+\resumePOR{Media Cell Manager} % Position
+    {: LOL Coding Club - WIT, Solapur} %Club,Event
+    {July 2022 - March 2023} %Tenure Period \\
+\resumePOR{Media Cell Manager} % Position
+    {: Soft Skill Development Cell - WIT, Solapur} %Club,Event
+    {July 2023 - Present} %Tenure Period \\
+
+ \resumePOR{Student Coordinator} % Position
+    {: Orchestrated team of 10 volunteers for National level Symposium} %Club,Event
+    {July 2023} %Tenure Period \\ 
+
+    % \resumePOR{Interests} % Position
+    % {: Travelling, Cricket, Music, Football} %Club,Event
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-------------------------------------------
+\end{document}
